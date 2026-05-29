@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaggio Croazia | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Stili aggiuntivi specifici per le foto grandi verticali della Home */
+        .vertical-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        .large-photo-slot {
+            width: 100%;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        /* Effetto hover per renderle dinamiche */
+        .large-photo-slot:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        .large-photo-slot img {
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            object-fit: cover;
+            display: block;
+        }
+        .large-photo-slot p {
+            padding: 20px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-align: center;
+            background: white;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Viaggio Croazia</div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="destinazione.html">Destinazioni</a></li>
+                <li><a href="programma.html">Programma</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Il nostro Diario di Viaggio</h1>
+            <p>Un'esperienza indimenticabile alla scoperta della Croazia.</p>
+        </section>
+
+        <section class="content">
+            <article class="intro">
+                <h2>Il nostro Hotel a Selce</h2>
+                <div class="flex-container">
+                    <img src="hotel-katarina-general-12244758.jpg" alt="Hotel Katarina Selce" class="rounded-img">
+                    <p>Abbiamo alloggiato presso l'<strong>Hotel Katarina</strong> a Selce. Situato sulla costa, è stato la nostra base operativa per esplorare le meraviglie della Croazia e della Slovenia.</p>
+                </div>
+            </article>
+
+            <article class="highlights">
+                <h2>Momenti del Viaggio</h2>
+                
+                <!-- Galleria con 8 slot grandi che si sviluppano in verticale -->
+                <div class="vertical-gallery">
+                    
+                    <!-- Slot 1 -->
+                    <div class="large-photo-slot">
+                        <img src="statua.JPG" alt="Il gruppo a Selce">
+                        <p>Il gruppo al tramonto a Selce</p>
+                    </div>
+
+                    <!-- Slot 2 -->
+                    <div class="large-photo-slot">
+                        <img src="fiume-413.jpg" alt="Scorcio naturalistico">
+                        <p>I meravigliosi paesaggi naturali e le coste della Croazia</p>
+                    </div>
+
+                    <!-- Slot 3 -->
+                    <div class="large-photo-slot">
+                        <img src="zagabria-san-marco.jpg" alt="Visita culturale">
+                        <p>Esplorando i vicoli storici di zagabria e san marco</p>
+                    </div>
+
+                    <!-- Slot 4 -->
+                    <div class="large-photo-slot">
+                        <img src="fotogruppo1.JPG" alt="Momento di gruppo">
+                        <p>Un altro bellissimo scatto ricordo con i compagni di viaggio</p>
+                    </div>
+
+                    <!-- Slot 5 -->
+                    <div class="large-photo-slot">
+                        <img src="selcespiaggia.jpg" alt="Nuovo Momento 1">
+                        <p>I colori del mare cristallino lungo la costa</p>
+                    </div>
+
+                    <!-- Slot 6 -->
+                    <div class="large-photo-slot">
+                        <img src="museo.jpeg" alt="Nuovo Momento 2">
+                        <p>Dettagli dell'architettura e monumenti storici</p>
+                    </div>
+
+                    <!-- Slot 7 -->
+                    <div class="large-photo-slot">
+                        <img src="fotohotel.JPG" alt="Nuovo Momento 3">
+                        <p>Momenti di relax e divertimento durante le pause</p>
+                    </div>
+
+                    <!-- Slot 8 -->
+                    <div class="large-photo-slot">
+                        <img src="postumia-grotte-hd.jpg" alt="Nuovo Momento 4">
+                        <p>L'ultima foto ricordo prima di rimetterci in viaggio</p>
+                    </div>
+
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Progetto di Gabriele Castellini- Classe Coordinata dalla Prof.ssa Inverso</p>
+    </footer>
+
+</body>
+</html>
